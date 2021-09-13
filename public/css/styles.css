@@ -1,5 +1,7 @@
-
-
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 /* ------------------------ Navbar ------------------------ */
 .logo {
@@ -8,7 +10,7 @@
     position: fixed;
     float: left;
     margin: 16px 46px;
-    color: #000;
+    color: #f1f1f1;
     font-weight: bold;
     font-size: 2.5rem;
     letter-spacing: .2rem;
@@ -16,15 +18,17 @@
   }
   
   nav {
+    background: #342eac;
     font-family: "Marmelad", sans-serif;
+    line-height: 80px;
     position: fixed;
     width: 100%;
-    line-height: 80px;
-    /* z-index: 3; */
+
+    z-index: 3;
   }
   
   a:hover {
-    color: gray;
+    color: #d47c8b;
   }
   
   nav ul {
@@ -32,7 +36,6 @@
     list-style: none;
     background: transparent;
     overflow: hidden;
-    color: #000;
     padding: 0;
     text-align: right;
     margin: 0;
@@ -48,43 +51,52 @@
   
   nav ul li a {
     text-decoration: none;
-    color: #000;
-    font-size: 1.25em;
+    color: #f1f1f1;
+    font-size: 1.25rem;
   }
   
   .menu-icon {
     line-height: 60px;
-    width: 100%;
-    background: #fff;
+    /* width: 100%; */
+    background: #f1f1f1;
     text-align: right;
-    box-sizing: border-box;
     padding: 15px 24px;
     cursor: pointer;
     color: #000;
     display: none;
   }
   
-  nav.black .menu-icon{
-    background: #342eac;
-  }
-  
-  nav.black ul {
-    background: #342eac;
-  }
-  
-  nav.black ul li a {
-    color: #f1f1f1;
-  }
-  
-  nav.black .logo {
-      color: #f1f1f1;
-  }
-  
-  nav.black .fa {
-    color: #f1f1f1;
+  /* */
+  .home {
+    padding-top: 80px;
   }
 
+  .slide-show {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 350px;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  .slide-show-img {
+    width: 500px;
+    object-fit: contain;  
+    animation: slideIn 20s linear infinite;
+    
+  }
 
+  
+
+  @keyframes slideIn {
+    0% {
+      transform: translateZ(0);
+    }
+    100% {
+      transform: translate3d(-100%,0,0);
+    }
+  }
 
 
   /* ------------------------ @Media ------------------------ */
@@ -92,15 +104,15 @@
   @media(max-width: 1100px) {
 
     .logo {
-        font-size: 2rem;
-        position: fixed;
+        color:#342eac;
+        font-size: 1.5rem;
         top: 0;
-        margin-top: 16px;
+        margin: 8px;
       }
     
       nav ul {
         max-height: 0;
-        background: #000;
+        background: #342eac;
       }
     
       .showing {
@@ -108,7 +120,6 @@
       }
     
       nav ul li {
-        box-sizing: border-box;
         width: 100%;
         padding: 24px;
         text-align: center;
