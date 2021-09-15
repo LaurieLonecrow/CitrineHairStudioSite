@@ -28,10 +28,10 @@ $(document).ready(function() {
 $(function(){
   $('.slide-show-img').slice(1).hide();
   setInterval(function(){
-    $('.slide-show :first-child').fadeOut()
-       .next('.slide-show-img').fadeIn(4000)
+    $('.slide-show :first-child').fadeOut(2000)
+       .next('.slide-show-img').fadeIn(3000)
        .end().appendTo('.slide-show');
-  }, 3000)
+  }, 5000)
 });
 
 
