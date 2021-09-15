@@ -75,19 +75,18 @@ body {
     align-items: center;
     background-color: white;
     display: flex;
-    height: 350px;
     overflow: auto;
     white-space: nowrap;
+    width: 100vw;
   }
   
   .slide-show-img {
-    width: 500px;
-    object-fit: contain;  
-    animation: slideIn 20s linear infinite;
-    
+    max-width: 100%;
+    opacity: .9;
+    padding-top: 300px;
+    position: absolute;
   }
 
-  
 
   @keyframes slideIn {
     0% {
