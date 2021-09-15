@@ -6,6 +6,19 @@ $(document).ready(function() {
       $("nav ul").toggleClass("showing");
     });
 
+$(function(){
+  $('.slide-show-img').slice(1).hide();
+  setInterval(function(){
+    $('.slide-show :first-child').fadeOut(2000)
+       .next('.slide-show-img').fadeIn(3000)
+       .end().appendTo('.slide-show');
+  }, 5000)
+});
+
+});
+
+
+
 
 // // Slideshow Auto
 // let index = 0;
@@ -23,17 +36,3 @@ $(document).ready(function() {
 // imgs[index-1].style.animation = "slideIn linear infinite";
 // setTimeout(autoSlideshow, 0);
 // }
-
-
-$(function(){
-  $('.slide-show-img').slice(1).hide();
-  setInterval(function(){
-    $('.slide-show :first-child').fadeOut(2000)
-       .next('.slide-show-img').fadeIn(3000)
-       .end().appendTo('.slide-show');
-  }, 5000)
-});
-
-
-
-});

@@ -1,16 +1,53 @@
-body {
-  margin: 0;
-  box-sizing: border-box;
+:root {
+  --purple: #342eac;
+  --rose: #d47c8b;
+  --white: #f1f1f1;
+  --cream: #ffefc4;
 }
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2rem;
+}
+
+.background {
+  position: relative;
+}
+
+.foreground {
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 450px;
+  width: 700px;
+}
+
 
 /* ------------------------ Navbar ------------------------ */
 .logo {
     font-family: "Marmelad", sans-serif;
-    line-height: 60px;
+    line-height: 4rem;
     position: fixed;
     float: left;
     margin: 16px 46px;
-    color: #f1f1f1;
+    color: var(--white);
     font-weight: bold;
     font-size: 2.5rem;
     letter-spacing: .2rem;
@@ -18,7 +55,7 @@ body {
   }
   
   nav {
-    background: #342eac;
+    background: var(--purple);
     font-family: "Marmelad", sans-serif;
     line-height: 80px;
     position: fixed;
@@ -28,7 +65,7 @@ body {
   }
   
   a:hover {
-    color: #d47c8b;
+    color: var(--rose);
   }
   
   nav ul {
@@ -46,19 +83,19 @@ body {
   nav ul li {
     display: inline-block;
     padding: 16px 40px;
-    ;
+    
   }
   
   nav ul li a {
     text-decoration: none;
-    color: #f1f1f1;
+    color: var(--white);
     font-size: 1.25rem;
   }
   
   .menu-icon {
     line-height: 60px;
     /* width: 100%; */
-    background: #f1f1f1;
+    background: var(--white);
     text-align: right;
     padding: 15px 24px;
     cursor: pointer;
@@ -67,17 +104,17 @@ body {
   }
   
   /* */
-  .home {
+  /* .home {
     padding-top: 80px;
-  }
+  } */
 
   .slide-show {
     align-items: center;
-    background-color: white;
+    background-color: var(--white);
     display: flex;
-    height: 400px;
-    overflow: auto;
-    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
     white-space: nowrap;
     width: 100vw;
   }
@@ -98,42 +135,105 @@ body {
   }
 
 
+
+/* ------------------------ Welcome: Home Page ------------------------ */
+
+.welcome-wrapper {
+  background-color: var(--cream);
+  color:var(--purple);
+  display: flex;
+  flex-direction: column;
+  font-family: "Marmelad", sans-serif;
+  padding: 30px;
+}
+
+.welcome-header, .welcome-detail {
+  align-self: center;
+}
+
+
+
+  .form {
+    padding-top: 100px;
+  }
+
+
+/* ------------------------ Footer ------------------------ */
+
+.bottom-container {
+  background-color: var(--purple);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Mermalad', sans-serif;
+  padding-top: 50px;
+}
+
+.copyright {
+  align-self: center;
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding: 20px;
+}
+    
+.footer-link { 
+  align-self: center;
+  font-weight: bold;
+  padding: 3%;
+}
+
+.footer-link a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0 40px;
+}
+
+.footer-link a:hover {
+  color: var(--rose);
+
+}
   /* ------------------------ @Media ------------------------ */
 
   @media(max-width: 1100px) {
 
     .logo {
-        color:#342eac;
-        font-size: 1.5rem;
-        top: 0;
-        margin: 8px;
-      }
-    
-      nav ul {
-        max-height: 0;
-        background: #342eac;
-      }
-    
-      .showing {
-        max-height: 30em;
-      }
-    
-      nav ul li {
-        width: 100%;
-        padding: 24px;
-        text-align: center;
-      }
-    
-      nav ul li a {
-        color: #fff;
-        font-size: 2em;
-      }
-    
-      .menu-icon {
-        display: block;
-      }
+      color:var(--purple);
+      font-size: 1.5rem;
+      top: 0;
+      margin: 8px;
+    }
+  
+    nav ul {
+      max-height: 0;
+      background: var(--purple);
+    }
+  
+    .showing {
+      max-height: 30em;
+    }
+  
+    nav ul li {
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      color: var(--white);
+      font-size: 2em;
+    }
 
+    .menu-icon {
+      display: block;
+    }
+     
+    }
 
+      @media(max-width: 786px) {
+      /* Slideshow */
 
-
-  }
+      .slide-show {
+        height: 200px;
+      }
+}
+  
