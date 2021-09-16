@@ -8,8 +8,9 @@ app.use(express.static("public"));
 
 
 app.get("/", function(req,res){
-    res.render("home");
+    res.render("load");
   })
+  
   app.get("/home", function(req,res){
     res.render("home");
   })

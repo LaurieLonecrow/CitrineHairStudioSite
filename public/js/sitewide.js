@@ -1,11 +1,10 @@
 $(document).ready(function() {
 
-// Navbar mobile Icon and Menu
+// Loading Image Screen 
 
-    $(".menu-icon").on("click", function() {
-      $("nav ul").toggleClass("showing");
-    });
+$(window).on("load", function() {
 
+// Homepage slideshow   
 $(function(){
   $('.slide-show-img').slice(1).hide();
   setInterval(function(){
@@ -15,9 +14,32 @@ $(function(){
   }, 5000)
 });
 
+
+// Navbar mobile Icon and Menu
+    $(".menu-icon").on("click", function() {
+      $("nav ul").toggleClass("showing");
+    });
+
+// Service Menu Mouse Effect
+//   $(".service-menu").mousemove(function (e){
+//     cursorEffect(e);
+//   })
+// function cursorEffect(event){
+//     $(".pricing-detail")
+//     .css({"display":"block"
+//       // left: event.pageX,
+//       // top: event.pageY
+//     }
+//       )
+
+//   }
+
+
+
+
 });
 
-
+});
 
 
 // // Slideshow Auto
