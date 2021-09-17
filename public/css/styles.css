@@ -294,14 +294,14 @@ p {
 .footer-link { 
   align-self: center;
   font-weight: bold;
-  padding: 3%;
+  padding: 2%;
 }
 
 .footer-link a {
   font-family: "Forum", serif;
   color: var(--white);
   text-decoration: none;
-  padding: 0 32px;
+  padding: 0 24px;
 }
 
 .footer-link a:hover {
@@ -352,8 +352,8 @@ p {
     .slide-show {
       height: 400px;
     }
-      /* ------------------------ PHONE MEDIA ------------------------ */
 
+      /* ------------------------ PHONE MEDIA ------------------------ */
     }
       @media(max-width: 786px) {
       h1 {
@@ -361,6 +361,7 @@ p {
       }
       
       /* ------------------------ Slideshow ------------------------ */
+
       .slide-show {
         height: 300px;
       }
@@ -373,6 +374,14 @@ p {
 
       .pricing-detail {
         width: fit-content;
+      }
+      
+      .service-menu:active .pricing-detail {
+        display: inline-block;
+      }
+
+      .parallax {
+        width: 100vw;
       }
 
     
