@@ -20,41 +20,9 @@ $(function(){
       $("nav ul").toggleClass("showing");
     });
 
-// Service Menu Mouse Effect
-//   $(".service-menu").mousemove(function (e){
-//     cursorEffect(e);
-//   })
-// function cursorEffect(event){
-//     $(".pricing-detail")
-//     .css({"display":"block"
-//       // left: event.pageX,
-//       // top: event.pageY
-//     }
-//       )
-
-//   }
-
 
 
 
 });
 
 });
-
-
-// // Slideshow Auto
-// let index = 0;
-// // autoSlideshow();
-
-// function autoSlideshow (){
-//   let imgs = document.getElementsByClassName("slide-show-img");
-//   for (let i = 0; i < imgs.length; i++){
-//     imgs[i].style.opacity = "1";
-//   }
-// index++;
-// if (index > imgs.length) {
-//   index = 1
-// }
-// imgs[index-1].style.animation = "slideIn linear infinite";
-// setTimeout(autoSlideshow, 0);
-// }
