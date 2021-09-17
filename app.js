@@ -1,3 +1,4 @@
+
 const express = require("express");
 const ejs = require("ejs");
 const app = express();
@@ -10,7 +11,7 @@ app.use(express.static("public"));
 app.get("/", function(req,res){
     res.render("load");
   })
-  
+
   app.get("/home", function(req,res){
     res.render("home");
   })
@@ -30,3 +31,4 @@ app.get("/", function(req,res){
 app.listen(process.env.PORT || 8000, function() {
     console.log("Server started on port 8000");
   });
+
