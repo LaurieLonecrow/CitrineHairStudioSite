@@ -1,5 +1,6 @@
 :root {
   --purple: #342eac;
+  --emerald: #1b4d4a;
   --rose: #d47c8b;
   --lightrose: #edc9bd;
   --white: #f1f1f1;
@@ -56,7 +57,7 @@ p {
   }
 }
 @keyframes appear {
-  from {opacity: 0;} to {opacity: 1;}
+  from {opacity: 0; transform: translateY(-5deg)} to {opacity: 1; transform: translateY(0deg)}
 } 
 
 /* ------------------------ Navbar ------------------------ */
@@ -111,11 +112,11 @@ p {
   
   .menu-icon {
     line-height: 60px;
-    background: var(--white);
+    background: var(--purple);
     text-align: right;
     padding: 15px 24px;
     cursor: pointer;
-    color: #000;
+    color: var(--white);
     display: none;
   }
   
@@ -207,7 +208,7 @@ p {
 }
 
 .service-menu {
-  align-self: flex-start;
+  align-self: center;
   border-bottom: 1px solid;
   position: relative;
   display: inline-block;
@@ -215,24 +216,42 @@ p {
 }
 
 .service-menu:hover .pricing-detail {
-  display: block;
+  display: inline-block;
 }
 
 /*------------------------ Appointment ------------------------ */
 
 .appointments-wrapper {
   background-color: var(--lightrose);
-  color: var(--cream);
   display: flex;
   flex-direction: column;
   font-family: "Forum", serif;
   padding: 80px;
 }
+.appointments-detail {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.appointments-header {
+  align-self: center;
+  color: var(--rose);
+  font-size: 1.5rem;
+  font-variant-caps: small-caps;
+  letter-spacing: 1px;
+}
+.appointments-detail p {
+  align-self: center;
+  border-top: .5px solid;
+  color: var(--cream);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
 /*------------------------ Products ------------------------ */
 .products-wrapper {
   background-color: var(--white);
-  color: var(--purple);
+  color: var(--emerald);
   display: flex;
   flex-direction: column;
   font-family: "Forum", serif;
@@ -242,7 +261,7 @@ p {
 /* ------------------------ Footer ------------------------ */
 
 .bottom-container {
-  background-color: var(--purple);
+  background-color: var(--emerald);
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -276,11 +295,16 @@ p {
   /* ------------------------ @Media ------------------------ */
 
   @media(max-width: 1100px) {
+    .foreground {
+      top: 300px;
+      width: 100vw;
+    }
 
     .logo {
-      color:var(--purple);
+      color:var(--white);
       font-size: 1.5rem;
       top: 0;
+      left: 30px;
       margin: 8px;
     }
   
@@ -307,17 +331,16 @@ p {
     .showing {
       max-height: 30em;
     }
-     
+
+    .slide-show {
+      height: 400px;
+    }
+
     }
 
       @media(max-width: 786px) {
       h1 {
         font-size: 2.5rem;
-      }
-      
-      .foreground {
-        top: 300px;
-        width: 100vw;
       }
       
         /* Slideshow */
