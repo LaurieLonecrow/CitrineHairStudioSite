@@ -1,7 +1,7 @@
 :root {
   --purple: #342eac;
   --rose: #d47c8b;
-  --lightrose: #e9adb7;
+  --lightrose: #edc9bd;
   --white: #f1f1f1;
   --cream: #f8f3e6;
 }
@@ -134,6 +134,15 @@ p {
   right: 0;
   top: 450px;
   width: 700px;
+  z-index: 2;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
 }
 
 .slide-show {
@@ -158,14 +167,13 @@ p {
   display: flex;
   flex-direction: column;
   font-family: "Forum", serif;
-  padding: 40px 80px;
+  padding: 40px 80px 80px;
 }
 
 .welcome-header, .welcome-detail {
   align-self: center;
 
 }
-
 
 /*------------------------ Pricing ------------------------ */
 
@@ -175,14 +183,7 @@ p {
   display: flex;
   flex-direction: column;
   font-family: "Forum", serif;
-  padding: 32px 80px;
-}
-
-.service-menu {
-  align-self: flex-start;
-  border-bottom: 1px solid;
-  position: relative;
-  display: inline-block;
+  padding: 80px;
 }
 
 .pricing-detail {
@@ -205,6 +206,14 @@ p {
   list-style-type: none;
 }
 
+.service-menu {
+  align-self: flex-start;
+  border-bottom: 1px solid;
+  position: relative;
+  display: inline-block;
+  width: 60%;
+}
+
 .service-menu:hover .pricing-detail {
   display: block;
 }
@@ -217,7 +226,7 @@ p {
   display: flex;
   flex-direction: column;
   font-family: "Forum", serif;
-  padding: 32px 80px;
+  padding: 80px;
 }
 
 /*------------------------ Products ------------------------ */
@@ -227,7 +236,7 @@ p {
   display: flex;
   flex-direction: column;
   font-family: "Forum", serif;
-  padding: 32px 80px;
+  padding: 80px;
 }
 
 /* ------------------------ Footer ------------------------ */
