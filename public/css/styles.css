@@ -275,7 +275,7 @@ p {
   display: flex;
   flex-direction: column;
   font-family: "Forum", serif;
-  padding: 80px;
+  padding: 80px 40px;
 }
 
 /* ------------------------ Footer ------------------------ */
@@ -303,6 +303,7 @@ p {
 
 .footer-link a {
   font-family: "Forum", serif;
+  font-size: 3rem;
   color: var(--white);
   text-decoration: none;
   padding: 0 24px;
@@ -380,14 +381,22 @@ p {
         width: fit-content;
       }
       
-      /* .service-menu:active .pricing-detail {
-        display: inline-block;
-      } */
+      .parallax:first-of-type {
+        background-repeat: repeat-y;
 
+      }
       .parallax {
-        width: 100vw;
+        background-size: 500px;
+
       }
 
+      .footer-link a {
+        font-size: 2rem;
+      }
+
+      .copyright {
+        padding: 16px;
+    }
     
 }     
 

@@ -20,10 +20,8 @@ $(function(){
       $("nav ul").toggleClass("showing");
     });
 
-
-
-$(".service-menu").on("click", function() {
-    $(".pricing-detail", this).toggleClass("display");
+$(".service-menu").click(function() {
+    $(".pricing-detail", this).toggleClass("showing");
 });
 
 
