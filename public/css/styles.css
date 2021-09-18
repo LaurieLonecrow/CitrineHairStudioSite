@@ -227,6 +227,10 @@ p {
   display: inline-block;
 }
 
+.display {
+  display: inline-block;
+}
+
 /*------------------------ Appointment ------------------------ */
 
 .appointments-wrapper {
@@ -376,9 +380,9 @@ p {
         width: fit-content;
       }
       
-      .service-menu:active .pricing-detail {
+      /* .service-menu:active .pricing-detail {
         display: inline-block;
-      }
+      } */
 
       .parallax {
         width: 100vw;

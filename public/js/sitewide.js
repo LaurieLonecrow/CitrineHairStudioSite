@@ -22,6 +22,10 @@ $(function(){
 
 
 
+$(".service-menu").on("click", function() {
+    $(".pricing-detail", this).toggleClass("display");
+});
+
 
 });
 
