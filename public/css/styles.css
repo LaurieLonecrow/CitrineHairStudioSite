@@ -384,10 +384,10 @@ p {
       .parallax:first-of-type {
         background-repeat: repeat-y;
       }
-/*       
+      
       .parallax {
         background-size: 500px;
-      } */
+      }
 
       .footer-link a {
         font-size: 2rem;
