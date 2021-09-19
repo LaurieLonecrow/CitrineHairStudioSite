@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
 // Loading Image Screen 
@@ -20,11 +21,25 @@ $(function(){
       $("nav ul").toggleClass("showing");
     });
 
-$(".service-menu").click(function() {
-    $(".pricing-detail", this).toggleClass("showing");
+$(".service-menu").click(function(e) {
+    $(".pricing-detail", this).toggleClass("display");
 });
 
+$(".maps-selector").click(function() {
+  
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) || 
+     (navigator.platform.indexOf("iPad") != -1) || 
+     (navigator.platform.indexOf("iPod") != -1))
+     {
+       console.log('maps')
+    window.open(`maps://maps.google.com/maps?daddr=<33.9751385>,<-84.4141128>&amp;ll=`);
+  
+} else {/* else use Google */
+    window.open(`https://maps.google.com/maps?daddr=<33.9751385>,<-84.4141128>&amp;ll=`);
+}
 
 });
 
+});
 });
