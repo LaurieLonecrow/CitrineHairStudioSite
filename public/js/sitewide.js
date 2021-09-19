@@ -33,10 +33,10 @@ $(".maps-selector").click(function() {
      (navigator.platform.indexOf("iPod") != -1))
      {
        console.log('maps')
-    window.open(`maps://maps.google.com/maps?daddr=<33.9751385>,<-84.4141128>&amp;ll=`);
+    window.open(`maps://maps.google.com/maps?daddr=33.9751385,-84.4141128&amp;ll=`);
   
 } else {/* else use Google */
-    window.open(`https://maps.google.com/maps?daddr=<33.9751385>,<-84.4141128>&amp;ll=`);
+    window.open(`https://maps.google.com/maps?daddr=33.9751385,-84.4141128&amp;ll=`);
 }
 
 });
