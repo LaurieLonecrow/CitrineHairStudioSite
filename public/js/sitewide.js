@@ -2,9 +2,9 @@
 $(document).ready(function() {
 
 // Loading Image Screen 
-
 $(window).on("load", function() {
 
+  
 // Homepage slideshow   
 $(function(){
   $('.slide-show-img').slice(1).hide();
@@ -21,12 +21,15 @@ $(function(){
       $("nav ul").toggleClass("showing");
     });
 
+
+// Pricing Menu
 $(".service-menu").click(function(e) {
     $(".pricing-detail", this).toggleClass("display");
 });
 
+
+// Maps
 $(".maps-selector").click(function() {
-  
   if /* if we're on iOS, open in Apple Maps */
     ((navigator.platform.indexOf("iPhone") != -1) || 
      (navigator.platform.indexOf("iPad") != -1) || 
