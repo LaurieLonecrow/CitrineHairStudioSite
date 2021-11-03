@@ -201,9 +201,10 @@ p {
   border-radius: 10px;
   color: var(--purple);
   display: none;
-  padding: 32px;
+  padding: 32px 16px;
   position: absolute;
   top: 0;
+  white-space: nowrap;
   width: max-content;
   z-index: 2;
 }
@@ -229,10 +230,6 @@ p {
   width: 60%;
   cursor: pointer;
 }
-
-/* .service-menu:hover .pricing-detail {
-  display: inline-block;
-} */
 
 .display {
   display: inline-block;

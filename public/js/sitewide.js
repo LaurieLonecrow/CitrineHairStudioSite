@@ -4,7 +4,7 @@ $(document).ready(function() {
 // Loading Image Screen 
 $(window).on("load", function() {
 
-  
+
 // Homepage slideshow   
 $(function(){
   $('.slide-show-img').slice(1).hide();
@@ -25,6 +25,13 @@ $(function(){
 // Pricing Menu
 $(".service-menu").click(function(e) {
     $(".pricing-detail", this).toggleClass("display");
+});
+
+$(".service-menu").on("mouseenter", function(e) {
+  $(".pricing-detail", this).addClass("display");
+});
+$(".service-menu").on("mouseleave", function(e) {
+  $(".pricing-detail", this).removeClass("display");
 });
 
 
