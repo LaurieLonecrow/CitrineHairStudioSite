@@ -9,4 +9,5 @@ It uses Express/Node.js with EJS templating and is deployed live through Heroku.
 
 ## Check it out!
 
-Take a look here: https://citrine-hair-studio.herokuapp.com/  
+Take a look here: www.citrine-hairstudio.com
+
